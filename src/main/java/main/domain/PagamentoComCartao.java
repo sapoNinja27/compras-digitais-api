@@ -1,7 +1,6 @@
 package main.domain;
 
 import javax.persistence.Entity;
-
 import main.domain.enums.EstadoPagamento;
 
 @Entity
