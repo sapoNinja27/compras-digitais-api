@@ -66,6 +66,21 @@ public class McApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Categoria cat1 = new Categoria(null, "Informatica");
 		Categoria cat2 = new Categoria(null, "Escritorio");
+		Categoria cat3 = new Categoria(null, "Escrasdasditorio");
+		Categoria cat4 = new Categoria(null, "Escrsadasdasitorio");
+		Categoria cat5 = new Categoria(null, "Escradsdsaditorio");
+		Categoria cat6 = new Categoria(null, "Escrsadsadasditorio");
+		Categoria cat7 = new Categoria(null, "Escrasdasdsaditorio");
+		Categoria cat8 = new Categoria(null, "Escrasdasdasditorio");
+		Categoria cat9 = new Categoria(null, "Escrddditorio");
+		Categoria cat10 = new Categoria(null, "Escraaaitorio");
+		Categoria cat11 = new Categoria(null, "Escrwwwitorio");
+		Categoria cat12 = new Categoria(null, "Escridsadasdtorio");
+		Categoria cat13 = new Categoria(null, "Escrixadsadtorio");
+		Categoria cat14 = new Categoria(null, "Escritasdasdasdorio");
+		Categoria cat15 = new Categoria(null, "Escritadqcorio");
+		Categoria cat16 = new Categoria(null, "Escrirebrqtorio");
+		Categoria cat17 = new Categoria(null, "Escritqegqwgeorio");
 
 		Produto p1 = new Produto(null, "Computador", 2000.00);
 		Produto p2 = new Produto(null, "Impressora", 800.00);
@@ -78,7 +93,7 @@ public class McApplication implements CommandLineRunner {
 		p2.getCategorias().addAll(Arrays.asList(cat1, cat2));
 		p3.getCategorias().addAll(Arrays.asList(cat1));
 
-		categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
+		categoriaRepository.saveAll(Arrays.asList(cat1, cat2,cat3,cat4,cat5,cat6,cat7,cat8,cat9,cat10,cat11,cat12,cat13,cat14,cat15,cat16,cat17));
 		produtoRepository.saveAll(Arrays.asList(p1, p2, p3));
 
 		Estado est1 = new Estado(null, "Minas Gerais");
