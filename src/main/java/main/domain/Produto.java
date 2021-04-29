@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -23,7 +25,7 @@ public class Produto implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
-	private Double preço;
+	private Double preco;
 
 	@JsonIgnore
 	@ManyToMany
@@ -38,11 +40,11 @@ public class Produto implements Serializable {
 
 	}
 
-	public Produto(Integer id, String nome, Double preço) {
+	public Produto(Integer id, String nome, Double preco) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.preço = preço;
+		this.preco = preco;
 	}
 
 	@JsonIgnore
@@ -78,12 +80,12 @@ public class Produto implements Serializable {
 		this.nome = nome;
 	}
 
-	public Double getPreço() {
-		return preço;
+	public Double getPreco() {
+		return preco;
 	}
 
-	public void setPreço(Double preço) {
-		this.preço = preço;
+	public void setPreco(Double preco) {
+		this.preco = preco;
 	}
 
 	public List<Categoria> getCategorias() {

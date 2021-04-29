@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,6 +14,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
@@ -65,7 +67,13 @@ public class Pedido implements Serializable {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-
+	public double getValor() {
+		double soma=0.0;
+		for(ItemPedido ip:itens) {
+			soma+=ip.getSubTotal();
+		}
+		return soma;
+	}
 	public Date getInstante() {
 		return instante;
 	}
