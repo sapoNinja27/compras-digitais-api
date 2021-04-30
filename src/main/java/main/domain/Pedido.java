@@ -1,6 +1,7 @@
 package main.domain;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -67,13 +68,14 @@ public class Pedido implements Serializable {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public double getValor() {
+	public double getValorTotal() {
 		double soma=0.0;
 		for(ItemPedido ip:itens) {
 			soma+=ip.getSubTotal();
 		}
 		return soma;
 	}
+	
 	public Date getInstante() {
 		return instante;
 	}
@@ -129,6 +131,42 @@ public class Pedido implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy HH:mm");
+		StringBuilder builder = new StringBuilder();
+		builder.append("\n");
+		builder.append("Pedido Numero: ");
+		builder.append(getId());
+		builder.append("\n");
+		builder.append("Data da Transição: ");
+		builder.append(sdf.format(getInstante()));
+		builder.append("\n");
+		builder.append("Cliente: ");
+		builder.append(getCliente().getNome());
+		builder.append("\n");
+		builder.append("Situação do Pagamento: ");
+		builder.append(getPagamento().getEstado().getDescricao());
+		builder.append("\n");
+		builder.append("\n");
+		builder.append("Detalhes: ");
+		builder.append("\n");
+		int i=1;
+		for(ItemPedido ip:getItens()) {
+			builder.append("\n");
+			builder.append("Item ");
+			builder.append(i);
+			builder.append(": ");
+			builder.append(ip.toString());
+			i++;
+		}
+		builder.append("\n");
+		builder.append("Valor Total: ");
+		builder.append(getValorTotal());
+		builder.append("\n");
+		return builder.toString();
 	}
 
 }
