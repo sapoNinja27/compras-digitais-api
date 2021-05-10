@@ -54,9 +54,9 @@ public class DBService {
 	private ItemPedidoRepository itemPedidoRepository;
 	@Autowired
 	private BCryptPasswordEncoder pe;
-	
+
 	public void instantiateTestDataBase() throws Exception {
-		
+
 		Categoria cat1 = new Categoria(null, "Informática");
 		Categoria cat2 = new Categoria(null, "Escritório");
 		Categoria cat3 = new Categoria(null, "Cama mesa e banho");
@@ -76,7 +76,88 @@ public class DBService {
 		Produto p9 = new Produto(null, "Abajour", 100.00);
 		Produto p10 = new Produto(null, "Pendente", 180.00);
 		Produto p11 = new Produto(null, "Shampoo", 90.00);
-
+		Produto p12 = new Produto(null, "Produto 12", 10.00);
+		Produto p13 = new Produto(null, "Produto 13", 10.00);
+		Produto p14 = new Produto(null, "Produto 14", 10.00);
+		Produto p15 = new Produto(null, "Produto 15", 10.00);
+		Produto p16 = new Produto(null, "Produto 16", 10.00);
+		Produto p17 = new Produto(null, "Produto 17", 10.00);
+		Produto p18 = new Produto(null, "Produto 18", 10.00);
+		Produto p19 = new Produto(null, "Produto 19", 10.00);
+		Produto p20 = new Produto(null, "Produto 20", 10.00);
+		Produto p21 = new Produto(null, "Produto 21", 10.00);
+		Produto p22 = new Produto(null, "Produto 22", 10.00);
+		Produto p23 = new Produto(null, "Produto 23", 10.00);
+		Produto p24 = new Produto(null, "Produto 24", 10.00);
+		Produto p25 = new Produto(null, "Produto 25", 10.00);
+		Produto p26 = new Produto(null, "Produto 26", 10.00);
+		Produto p27 = new Produto(null, "Produto 27", 10.00);
+		Produto p28 = new Produto(null, "Produto 28", 10.00);
+		Produto p29 = new Produto(null, "Produto 29", 10.00);
+		Produto p30 = new Produto(null, "Produto 30", 10.00);
+		Produto p31 = new Produto(null, "Produto 31", 10.00);
+		Produto p32 = new Produto(null, "Produto 32", 10.00);
+		Produto p33 = new Produto(null, "Produto 33", 10.00);
+		Produto p34 = new Produto(null, "Produto 34", 10.00);
+		Produto p35 = new Produto(null, "Produto 35", 10.00);
+		Produto p36 = new Produto(null, "Produto 36", 10.00);
+		Produto p37 = new Produto(null, "Produto 37", 10.00);
+		Produto p38 = new Produto(null, "Produto 38", 10.00);
+		Produto p39 = new Produto(null, "Produto 39", 10.00);
+		Produto p40 = new Produto(null, "Produto 40", 10.00);
+		Produto p41 = new Produto(null, "Produto 41", 10.00);
+		Produto p42 = new Produto(null, "Produto 42", 10.00);
+		Produto p43 = new Produto(null, "Produto 43", 10.00);
+		Produto p44 = new Produto(null, "Produto 44", 10.00);
+		Produto p45 = new Produto(null, "Produto 45", 10.00);
+		Produto p46 = new Produto(null, "Produto 46", 10.00);
+		Produto p47 = new Produto(null, "Produto 47", 10.00);
+		Produto p48 = new Produto(null, "Produto 48", 10.00);
+		Produto p49 = new Produto(null, "Produto 49", 10.00);
+		Produto p50 = new Produto(null, "Produto 50", 10.00);
+		cat1.getProdutos()
+				.addAll(Arrays.asList(p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27,
+						p28, p29, p30, p31, p32, p34, p35, p36, p37, p38, p39, p40, p41, p42, p43, p44, p45, p46, p47,
+						p48, p49, p50));
+		p12.getCategorias().add(cat1);
+		p13.getCategorias().add(cat1);
+		p14.getCategorias().add(cat1);
+		p15.getCategorias().add(cat1);
+		p16.getCategorias().add(cat1);
+		p17.getCategorias().add(cat1);
+		p18.getCategorias().add(cat1);
+		p19.getCategorias().add(cat1);
+		p20.getCategorias().add(cat1);
+		p21.getCategorias().add(cat1);
+		p22.getCategorias().add(cat1);
+		p23.getCategorias().add(cat1);
+		p24.getCategorias().add(cat1);
+		p25.getCategorias().add(cat1);
+		p26.getCategorias().add(cat1);
+		p27.getCategorias().add(cat1);
+		p28.getCategorias().add(cat1);
+		p29.getCategorias().add(cat1);
+		p30.getCategorias().add(cat1);
+		p31.getCategorias().add(cat1);
+		p32.getCategorias().add(cat1);
+		p33.getCategorias().add(cat1);
+		p34.getCategorias().add(cat1);
+		p35.getCategorias().add(cat1);
+		p36.getCategorias().add(cat1);
+		p37.getCategorias().add(cat1);
+		p38.getCategorias().add(cat1);
+		p39.getCategorias().add(cat1);
+		p40.getCategorias().add(cat1);
+		p41.getCategorias().add(cat1);
+		p42.getCategorias().add(cat1);
+		p43.getCategorias().add(cat1);
+		p44.getCategorias().add(cat1);
+		p45.getCategorias().add(cat1);
+		p46.getCategorias().add(cat1);
+		p47.getCategorias().add(cat1);
+		p48.getCategorias().add(cat1);
+		p49.getCategorias().add(cat1);
+		p50.getCategorias().add(cat1);
 		cat1.getProdutos().addAll(Arrays.asList(p1, p2, p3));
 		cat2.getProdutos().addAll(Arrays.asList(p2));
 
@@ -103,28 +184,109 @@ public class DBService {
 		p11.getCategorias().addAll(Arrays.asList(cat7));
 
 		categoriaRepository.saveAll(Arrays.asList(cat1, cat2, cat3, cat4, cat5, cat6, cat7));
-		produtoRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11));
+		produtoRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
+				p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p34, p35, p36, p37, p38,
+				p39, p40, p41, p42, p43, p44, p45, p46, p47, p48, p49, p50));
+		Estado est1 = new Estado(null, "Acre");
+		Estado est2 = new Estado(null, "Alagoas");
+		Estado est3 = new Estado(null, "Amapá");
+		Estado est4 = new Estado(null, "Amazonas");
+		Estado est5 = new Estado(null, "Bahia");
+		Estado est6 = new Estado(null, "Ceará");
+		Estado est7 = new Estado(null, "Distrito Federal");
+		Estado est8 = new Estado(null, "Espírito Santo");
+		Estado est9 = new Estado(null, "Goiás");
+		Estado est10 = new Estado(null, "Maranhão");
+		Estado est11 = new Estado(null, "Mato Grosso");
+		Estado est12 = new Estado(null, "Mato Grosso do Sul");
+		Estado est13 = new Estado(null, "Minas Gerais");
+		Estado est14 = new Estado(null, "Pará");
+		Estado est15 = new Estado(null, "Paraíba");
+		Estado est16 = new Estado(null, "Paraná");
 
-		Estado est1 = new Estado(null, "Minas Gerais");
-		Estado est2 = new Estado(null, "São Paulo");
+		Estado est17 = new Estado(null, "Pernambuco");
+		Estado est18 = new Estado(null, "Piauí");
+		Estado est19 = new Estado(null, "Rio de Janeiro");
+		Estado est20 = new Estado(null, "Rio Grande do Norte");
+		Estado est21 = new Estado(null, "Rio Grande do Sul");
+		Estado est22 = new Estado(null, "Rondônia");
+		Estado est23 = new Estado(null, "Roraima");
+		Estado est24 = new Estado(null, "Santa Catarina");
+		Estado est25 = new Estado(null, "São Paulo");
+		Estado est26 = new Estado(null, "Sergipe");
+		Estado est27 = new Estado(null, "Tocantins");
 
-		Cidade c1 = new Cidade(null, "Uberlândia", est1);
-		Cidade c2 = new Cidade(null, "São Paulo", est2);
-		Cidade c3 = new Cidade(null, "Campinas", est2);
+		Cidade c1 = new Cidade(null, "Rio Branco", est1);
+		Cidade c2 = new Cidade(null, "Maceió", est2);
+		Cidade c3 = new Cidade(null, "Macapá", est3);
+		Cidade c4 = new Cidade(null, "Manaus", est4);
+		Cidade c5 = new Cidade(null, "Fortaleza", est5);
+		Cidade c6 = new Cidade(null, "Brasília", est6);
+		Cidade c7 = new Cidade(null, "Vitória", est7);
+		Cidade c8 = new Cidade(null, "Goiânia", est8);
+		Cidade c9 = new Cidade(null, "São Luís", est9);
+		Cidade c10 = new Cidade(null, "São Luís", est10);
+		Cidade c11 = new Cidade(null, "Cuiabá", est11);
+		Cidade c12 = new Cidade(null, "Campo Grande", est12);
+		Cidade c13 = new Cidade(null, "Belo Horizonte", est13);
+		Cidade c14 = new Cidade(null, "Belém", est14);
+		Cidade c15 = new Cidade(null, "João Pessoa", est15);
+		Cidade c16 = new Cidade(null, "Curitiba", est16);
+		Cidade c17 = new Cidade(null, "Recife", est17);
+		Cidade c18 = new Cidade(null, "Teresina", est18);
+		Cidade c19 = new Cidade(null, "Rio de Janeiro", est19);
+		Cidade c20 = new Cidade(null, "Natal", est20);
+		Cidade c21 = new Cidade(null, "Porto Alegre", est21);
+		Cidade c22 = new Cidade(null, "Porto Velho", est22);
+		Cidade c23 = new Cidade(null, "Boa Vista", est23);
+		Cidade c24 = new Cidade(null, "Florianópolis", est24);
+		Cidade c25 = new Cidade(null, "São Paulo", est25);
+		Cidade c26 = new Cidade(null, "Aracaju", est26);
+		Cidade c27 = new Cidade(null, "Palmas", est27);
 
 		est1.getCidades().addAll(Arrays.asList(c1));
-		est2.getCidades().addAll(Arrays.asList(c2, c3));
+		est2.getCidades().addAll(Arrays.asList(c2));
+		est3.getCidades().addAll(Arrays.asList(c3));
+		est4.getCidades().addAll(Arrays.asList(c4));
+		est5.getCidades().addAll(Arrays.asList(c5));
+		est6.getCidades().addAll(Arrays.asList(c6));
+		est7.getCidades().addAll(Arrays.asList(c7));
+		est8.getCidades().addAll(Arrays.asList(c8));
+		est9.getCidades().addAll(Arrays.asList(c9));
+		est10.getCidades().addAll(Arrays.asList(c10));
+		est11.getCidades().addAll(Arrays.asList(c11));
+		est12.getCidades().addAll(Arrays.asList(c12));
+		est13.getCidades().addAll(Arrays.asList(c13));
+		est14.getCidades().addAll(Arrays.asList(c14));
+		est15.getCidades().addAll(Arrays.asList(c15));
+		est16.getCidades().addAll(Arrays.asList(c16));
+		est17.getCidades().addAll(Arrays.asList(c17));
+		est18.getCidades().addAll(Arrays.asList(c18));
+		est19.getCidades().addAll(Arrays.asList(c19));
+		est20.getCidades().addAll(Arrays.asList(c20));
+		est21.getCidades().addAll(Arrays.asList(c21));
+		est22.getCidades().addAll(Arrays.asList(c22));
+		est23.getCidades().addAll(Arrays.asList(c23));
+		est24.getCidades().addAll(Arrays.asList(c24));
+		est25.getCidades().addAll(Arrays.asList(c25));
+		est26.getCidades().addAll(Arrays.asList(c26));
+		est27.getCidades().addAll(Arrays.asList(c27));
 
-		estadoRepository.saveAll(Arrays.asList(est1, est2));
-		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
+		estadoRepository.saveAll(
+				Arrays.asList(est1, est2, est3, est4, est5, est6, est7, est8, est9, est10, est11, est12, est13, est14,
+						est15, est16, est17, est18, est19, est20, est21, est22, est23, est24, est25, est26, est27));
+		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16,
+				c17, c18, c19, c20, c21, c22, c23, c24, c25, c26, c27));
 
-		Cliente cli1 = new Cliente(null, "Maria Silva", "jp_ronzanisantos@hotmail.com", "36378912377", TipoCliente.PESSOAFISICA,pe.encode("1234"));
+		Cliente cli1 = new Cliente(null, "João Pedro Ronzani", "jp_ronzanisantos@hotmail.com", "36378912377",
+				TipoCliente.PESSOAFISICA, pe.encode("1234"));
 		cli1.getTelefones().addAll(Arrays.asList("27363323", "93838393"));
-		
-		Cliente cli2 = new Cliente(null, "Bolsonaro Junior", "jpronzanisantos@gmail.com", "36378912377", TipoCliente.PESSOAFISICA,pe.encode("1234"));
+
+		Cliente cli2 = new Cliente(null, "João Pedro dos Santos", "jpronzanisantos@gmail.com", "36378912377",
+				TipoCliente.PESSOAFISICA, pe.encode("1234"));
 		cli2.getTelefones().addAll(Arrays.asList("5468646", "486464846"));
 		cli2.addPerfil(Perfil.ADMIN);
-		
+
 		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 303", "Jardim", "38220834", cli1, c1);
 		Endereco e2 = new Endereco(null, "Avenida Matos", "105", "Sala 800", "Centro", "38777012", cli1, c2);
 		Endereco e3 = new Endereco(null, "Avenida Bolsonaro", "77", null, "Centro", "1215416", cli2, c1);
@@ -132,8 +294,8 @@ public class DBService {
 		cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
 		cli2.getEnderecos().addAll(Arrays.asList(e3));
 
-		clienteRepository.saveAll(Arrays.asList(cli1,cli2));
-		enderecoRepository.saveAll(Arrays.asList(e1, e2,e3));
+		clienteRepository.saveAll(Arrays.asList(cli1, cli2));
+		enderecoRepository.saveAll(Arrays.asList(e1, e2, e3));
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 
