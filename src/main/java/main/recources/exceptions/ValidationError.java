@@ -3,7 +3,7 @@ package main.recources.exceptions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ValidationError extends StandartError {
+public class ValidationError extends StandardError {
 
 	private static final long serialVersionUID = 1L;
 

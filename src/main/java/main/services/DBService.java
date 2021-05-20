@@ -187,6 +187,7 @@ public class DBService {
 		produtoRepository.saveAll(Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16,
 				p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p34, p35, p36, p37, p38,
 				p39, p40, p41, p42, p43, p44, p45, p46, p47, p48, p49, p50));
+		
 		Estado est1 = new Estado(null, "Acre");
 		Estado est2 = new Estado(null, "Alagoas");
 		Estado est3 = new Estado(null, "Amapá");
@@ -203,7 +204,6 @@ public class DBService {
 		Estado est14 = new Estado(null, "Pará");
 		Estado est15 = new Estado(null, "Paraíba");
 		Estado est16 = new Estado(null, "Paraná");
-
 		Estado est17 = new Estado(null, "Pernambuco");
 		Estado est18 = new Estado(null, "Piauí");
 		Estado est19 = new Estado(null, "Rio de Janeiro");
@@ -215,7 +215,7 @@ public class DBService {
 		Estado est25 = new Estado(null, "São Paulo");
 		Estado est26 = new Estado(null, "Sergipe");
 		Estado est27 = new Estado(null, "Tocantins");
-
+		
 		Cidade c1 = new Cidade(null, "Rio Branco", est1);
 		Cidade c2 = new Cidade(null, "Maceió", est2);
 		Cidade c3 = new Cidade(null, "Macapá", est3);
@@ -289,7 +289,7 @@ public class DBService {
 
 		Endereco e1 = new Endereco(null, "Rua Flores", "300", "Apto 303", "Jardim", "38220834", cli1, c1);
 		Endereco e2 = new Endereco(null, "Avenida Matos", "105", "Sala 800", "Centro", "38777012", cli1, c2);
-		Endereco e3 = new Endereco(null, "Avenida Bolsonaro", "77", null, "Centro", "1215416", cli2, c1);
+		Endereco e3 = new Endereco(null, "Avenida Clarisse", "77", null, "Centro", "1215416", cli2, c1);
 
 		cli1.getEnderecos().addAll(Arrays.asList(e1, e2));
 		cli2.getEnderecos().addAll(Arrays.asList(e3));
